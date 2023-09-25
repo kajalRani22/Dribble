@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dribble</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="homeLink">
+        <a href="/">
+          <img
+            src="https://incomparable-crostata-4ad788.netlify.app/logo_black.png"
+            alt="Dribbble.com"
+        /></a>
+      </div>
+      <div class="navLinks">
+        <div id="navId">
+          <ul>
+            <li>Inspiration</li>
+            <li>Find Work</li>
+            <li>Learn Design</li>
+            <li>Go Pro</li>
+            <li>Design Files</li>
+            <li>Hire Designers</li>
+          </ul>
+          <div class="navAuth">
+            <a class="fa fa-search navfa"></a>
+            <a href="" class="signIn">Sign in</a>
+            <button class="btn">Share my work</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="hamburger" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </div>
+    </nav>
+
+    <section class="firstSection">
+      <div>
+        <video
+          id="background-video"
+          autoplay
+          loop
+          muted
+          poster="https://cdn.dribbble.com/uploads/39421/original/963b4f8739cbdf86ca3f3a23245efd18.mp4?1657824985"
+        >
+          <source
+            src=" https://incomparable-crostata-4ad788.netlify.app/ink.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <div class="listSection">
+          <ul>
+            <li>Discover</li>
+            <li>Animation</li>
+            <li>Branding</li>
+            <li>Illustration</li>
+            <li>Mobile</li>
+            <li>Print</li>
+            <li>Product Design</li>
+            <li>Typography</li>
+            <li>Web Design</li>
+          </ul>
+        </div>
+
+        <div class="heroSection">
+          <h1>Explore the world’s leading design portfolios</h1>
+          <p>
+            Millions of designers and agencies around the world showcase their
+            portfolio work on Dribbble - the home to the world’s best design and
+            creative professionals.
+          </p>
+        </div>
+
+        <div class="heroSearch">
+          <input type="search" placeholder="Search..." />
+        </div>
+
+        <div class="trendingSection">
+          <ul>
+            <span>Trending searches</span>
+            <li>landing page</li>
+            <li>ios</li>
+            <li>food</li>
+            <li>ux design</li>
+            <li>app design</li>
+            <li>patterns</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      let navId = document.getElementById("navId");
+      function myFunction() {
+        navId.classList.toggle("show");
+      }
+    </script>
+  </body>
+</html>
